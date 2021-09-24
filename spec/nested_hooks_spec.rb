@@ -3,6 +3,10 @@ RSpec.describe 'nested hooks' do
     puts 'OUTER Before context'
   end
 
+  after(:context) do
+    puts 'OUTER After context'
+  end
+
   before(:example) do
     puts 'OUTER Before example'
   end
